@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/pm2 start index.ts --env production -i max --name testapp",
+    "start": "./node_modules/.bin/pm2 start index.ts --env production -i 2 --name testapp",
     "heroku-postbuild": "./node_modules/.bin/pm2 install typescript",
     "stop": "./node_modules/.bin/pm2 stop testapp --env production",
     "delete": "./node_modules/.bin/pm2 delete testapp --env production"
